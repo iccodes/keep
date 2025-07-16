@@ -25,7 +25,14 @@
       "id": "app_password",
       "type": "input",
       "name": "App Password",
-      "description": "Google App Password (generate from Google Account settings)"
+      "description": "Google App Password (generate from Google Account settings) - stored securely"
+    },
+    {
+      "id": "token_storage_path",
+      "type": "input",
+      "name": "Token Storage Path",
+      "description": "Path to store encrypted authentication tokens (optional)",
+      "default_value": "~/.cache/ulauncher_keep"
     }
   ]
 }
