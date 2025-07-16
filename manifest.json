@@ -1,0 +1,31 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Google Keep Todo",
+  "description": "Add todo items to Google Keep",
+  "developer_name": "Adam",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "keep_kw",
+      "type": "keyword",
+      "name": "Keep",
+      "description": "Add todo to Google Keep",
+      "default_value": "keep"
+    },
+    {
+      "id": "google_email",
+      "type": "input",
+      "name": "Google Email",
+      "description": "Your Google account email"
+    },
+    {
+      "id": "app_password",
+      "type": "input",
+      "name": "App Password",
+      "description": "Google App Password (generate from Google Account settings)"
+    }
+  ]
+}
