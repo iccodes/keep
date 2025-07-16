@@ -1,7 +1,7 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Google Keep Todo",
-  "description": "Add todo items to Google Keep",
+  "name": "Google Tasks Todo",
+  "description": "Add todo items to Google Tasks",
   "developer_name": "Adam",
   "icon": "images/icon.png",
   "options": {
@@ -9,30 +9,31 @@
   },
   "preferences": [
     {
-      "id": "keep_kw",
+      "id": "tasks_kw",
       "type": "keyword",
-      "name": "Keep",
-      "description": "Add todo to Google Keep",
-      "default_value": "keep"
+      "name": "Tasks",
+      "description": "Add todo to Google Tasks",
+      "default_value": "task"
     },
     {
-      "id": "google_email",
+      "id": "credentials_path",
       "type": "input",
-      "name": "Google Email",
-      "description": "Your Google account email"
-    },
-    {
-      "id": "app_password",
-      "type": "input",
-      "name": "App Password",
-      "description": "Google App Password (generate from Google Account settings) - stored securely"
+      "name": "Credentials File Path",
+      "description": "Path to your Google OAuth2 credentials.json file",
+      "default_value": "~/.config/ulauncher_tasks/credentials.json"
     },
     {
       "id": "token_storage_path",
       "type": "input",
       "name": "Token Storage Path",
-      "description": "Path to store encrypted authentication tokens (optional)",
-      "default_value": "~/.cache/ulauncher_keep"
+      "description": "Path to store OAuth2 tokens",
+      "default_value": "~/.cache/ulauncher_tasks"
+    },
+    {
+      "id": "tasklist_id",
+      "type": "input",
+      "name": "Task List ID",
+      "description": "Google Tasks list ID (leave empty for default list)"
     }
   ]
 }
